@@ -14,7 +14,8 @@ const listarAlunos = async (req,res) => {
 
 const criarAlunos = async (req,res) =>{
     try{
-        const {nome,email,idade} = await prisma.aluno.create({
+        const {nome,email,idade} = req.body
+         await prisma.aluno.create({
             data : {
                 nome,
                 email,

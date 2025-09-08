@@ -64,3 +64,36 @@ Siga os passos abaixo para rodar a aplicação localmente:
     ```
 
 7.  O servidor estará rodando no endereço `http://localhost:3003` (ou a porta
+
+## Endpoints da API
+
+A seguir, a documentação de todos os endpoints disponíveis.
+
+**Observação:** As requisições de `POST` e `PUT` esperam dados no formato `x-www-form-urlencoded`.
+
+---
+### Alunos
+
+| Método HTTP | Endpoint          | Descrição                   | Corpo da Requisição (Exemplo)               |
+| :---------- | :---------------- | :-------------------------- | :------------------------------------------ |
+| `GET`       | `/api/alunos`     | Lista todos os alunos.      | (Vazio)                                     |
+| `POST`      | `/api/alunos`     | Cadastra um novo aluno.     | `nome`, `email`, `idade`                    |
+| `PUT`       | `/api/alunos/:id` | Atualiza nome e e-mail.     | `nome`, `email`                             |
+| `DELETE`    | `/api/alunos/:id` | Exclui um aluno pelo ID.    | (Vazio)                                     |
+
+---
+### Professores
+
+| Método HTTP | Endpoint             | Descrição                      | Corpo da Requisição (Exemplo)                  |
+| :---------- | :------------------- | :----------------------------- | :--------------------------------------------- |
+| `GET`       | `/api/professores`   | Lista todos os professores.    | (Vazio)                                        |
+| `POST`      | `/api/professores`   | Cadastra um novo professor.    | `nome`, `email`, `idade`                       |
+| `PUT`       | `/api/professores/:id` | Atualiza nome e e-mail.        | `nome`, `email`                                |
+| `DELETE`    | `/api/professores/:id` | Exclui um professor pelo ID.   | (Vazio)                                        |
+
+---
+
+## 👨‍💻 Autor
+**[Vicente Augusto]** 👋
+
+[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vicenteaugusto/)

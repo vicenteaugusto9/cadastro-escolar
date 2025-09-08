@@ -14,12 +14,13 @@ const listarAlunos = async (req,res) => {
 
 const criarAlunos = async (res,req) =>{
     try{
-        const {nome,emai,idade} = await prisma.aluno.create({
+        const {nome,email,idade} = await prisma.aluno.create({
             data : {
                 nome,
                 email,
                 idade: parseInt(idade)
             }
+            
         })
         res.status(201).json(novoAluno)
     } catch (error){

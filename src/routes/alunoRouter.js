@@ -8,6 +8,4 @@ router.put('/alunos/:id',alunoController.atualizarAluno)
 router.delete('/alunos/:id',alunoController.deletarAluno)
 
 
-module.exports ={
-    router
-}
+module.exports = router

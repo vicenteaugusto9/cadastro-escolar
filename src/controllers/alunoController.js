@@ -1,4 +1,4 @@
-const { PrismaClient } = require('@prisma/client')
+const { PrismaClient } = require('../generated/prisma');
 
 const prisma = new  PrismaClient()
 
@@ -12,7 +12,7 @@ const listarAlunos = async (req,res) => {
     }
 }
 
-const criarAlunos = async (res,req) =>{
+const criarAlunos = async (req,res) =>{
     try{
         const {nome,email,idade} = await prisma.aluno.create({
             data : {
@@ -20,7 +20,7 @@ const criarAlunos = async (res,req) =>{
                 email,
                 idade: parseInt(idade)
             }
-            
+
         })
         res.status(201).json(novoAluno)
     } catch (error){

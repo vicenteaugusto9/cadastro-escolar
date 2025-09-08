@@ -32,12 +32,12 @@ Siga os passos abaixo para rodar a aplicação localmente:
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [https://github.com/seu-usuario/nome-do-repositorio.git](https://github.com/seu-usuario/nome-do-repositorio.git)
+    git clone [https://github.com/vicenteaugusto9/cadastro-escolar.git)
     ```
 
 2.  **Navegue até o diretório do projeto:**
     ```bash
-    cd nome-do-repositorio
+    cd cadastro-escolar
     ```
 
 3.  **Instale as dependências:**
